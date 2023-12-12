@@ -1,0 +1,264 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'PT Sans', sans-serif;
+}
+/* =======================Header============================= */
+header{
+    /* position:fixed; */
+    width:100%;
+    background-color: rgba(243,255,255,255);
+    top: 0%;
+    left: 0%;
+}
+
+nav .container{
+    width:90%;
+    margin:auto;
+}
+nav .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:10px 0px;
+}
+nav .row .logo{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Asap', sans-serif;
+    color:black
+}
+nav .row .logo h1 {
+    font-weight: 900;
+    font-size: 40px;
+}
+nav .row .logo  h1 .second {
+    color: #2dcacf;
+}
+nav .row .bars{
+    display: none;
+    padding:15px;
+    font-size: 20px;
+    color: black;
+}
+nav .row  .nav-link ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;   
+
+}
+nav .row  .nav-link ul li{
+    padding:10px;
+    margin-right: 20px;
+    position: relative;
+
+}
+nav .row  .nav-link ul li a {
+    color:black;
+    text-decoration: none;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+nav .row  .nav-link ul li a:hover{
+    cursor: pointer;
+    color: #2dcacf;
+}
+
+nav .row  .nav-link ul li a:hover::before{
+    content: "";
+    width: 25%;
+    height: 5px;
+    bottom: 0;
+    left: 10px;
+    position: absolute;
+    background-color:#2dcacf ;
+}
+nav .row  .nav-link ul  .btn1 {
+    border:1px solid white;
+    border-radius: 30px;
+    padding: 10px ;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-left: 40px;
+}
+nav .row  .nav-link ul  .btn1:hover {
+    cursor: pointer;
+} 
+nav .row  .nav-link ul  .btn2 {
+    border:1px solid #2dcacf;
+    background-color: #2dcacf;
+    color:white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+nav .row  .nav-link ul  .btn2:hover {
+    cursor: pointer;
+} 
+nav .row  .nav-link ul  .active{
+    background-color: #2dcacf;
+    
+}
+/* =======================Section-1============================= */
+
+main #section1{
+    background-color: #def9fa;
+}
+main #section1 .container{
+    width: 90%;
+    margin: auto;
+}
+main #section1 .container .row{
+    display: flex;
+    justify-content: space-evenly;
+}
+main #section1 .container .row .caption{
+    width: 45%;
+    margin-top: 10%;
+}
+main #section1 .container .row .caption h2{
+    font-size: 70px;
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+main #section1 .container .row .caption p{
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+main #section1 .container .row .caption .span{
+    color:#2dcacf;
+}
+main #section1 .container .row .caption .btn3{
+    width:50%;
+    padding:10px 25px;
+    background-color:#2dcacf;
+    color:white;
+    border: 1px solid #2dcacf;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}   
+main #section1 .container .row .caption .btn3:hover{
+    cursor: pointer;
+}
+main #section1 .container .row .caption .btn3 i{
+    color: white;
+    margin-left: 15px;
+}
+main #section1 .container .row  .imgs{
+    width:25%;
+}
+main #section1 .container .row  .imgs img{
+    width:100%;
+    margin-top: 25px;
+    
+}
+/* =======================Media-Query============================= */
+@media (max-width:1140px){
+
+}
+@media (max-width:992px){
+    nav .row{
+        justify-content: space-between;
+    }
+    nav .row .nav-link{
+        display: none;
+    }
+    nav .row .bars{
+        display: block;
+    }
+    main #section1 .container .row{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    main #section1 .container .row .caption{
+        width: 60%;
+    }
+    main #section1 .container .row .imgs{
+        width: 45%;
+    }
+}
+@media (max-width:780px){
+    main #section1 .container .row .caption{
+        width: 70%;
+    }
+    main #section1 .container .row .imgs{
+        width: 50%;
+    }
+}
+@media (max-width:576px){
+    nav .container{
+        padding:0px 15px;
+        width:100%;
+    }
+    main #section1 .container{
+        padding:0px 15px;
+        width:100%;
+    }
+    main #section1 .container .row .caption{
+        width: 80%;
+    }
+    main #section1 .container .row .imgs{
+        width: 60%;
+    }
+    main #section1 .container .row .caption h2{
+        font-size: 35px;
+    }
+    main #section1 .container .row .caption p{
+        
+        font-size: 18px;
+    }
+    main #section1 .container .row .caption .btn3{
+        width:80%;
+    }
+    nav .row .logo h1 {
+        font-weight: 600;
+        font-size: 25px;
+    }
+}
+@media (max-width:290px){
+    main #section1 .container .row .caption h2{
+        font-size: 20px;
+    }
+    main #section1 .container .row .caption p{
+        
+        font-size: 18px;
+    }
+    main #section1 .container .row .caption .btn3{
+        width:100%;
+    }
+    nav .row .logo h1 {
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+
