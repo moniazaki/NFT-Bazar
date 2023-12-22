@@ -9,7 +9,7 @@
 header{
     /* position:fixed; */
     width:100%;
-    background-color: rgba(243,255,255,255);
+    background-color: #111;
     top: 0%;
     left: 0%;
 }
@@ -28,20 +28,20 @@ nav .row .logo{
     font-weight: 700;
     font-size: 20px;
     font-family: 'Asap', sans-serif;
-    color:black
+    color:rgb(255, 255, 255)
 }
 nav .row .logo h1 {
     font-weight: 900;
     font-size: 40px;
 }
 nav .row .logo  h1 .second {
-    color: #2dcacf;
+    color: rgb(165, 18, 18);
 }
 nav .row .bars{
     display: none;
     padding:15px;
     font-size: 20px;
-    color: black;
+    color: rgb(165, 18, 18);
 }
 nav .row  .nav-link ul{
     display: flex;
@@ -56,7 +56,7 @@ nav .row  .nav-link ul li{
 
 }
 nav .row  .nav-link ul li a {
-    color:black;
+    color:white;
     text-decoration: none;
     transition: all 1.5s;
     -webkit-transition: all 1.5s;
@@ -66,7 +66,7 @@ nav .row  .nav-link ul li a {
 }
 nav .row  .nav-link ul li a:hover{
     cursor: pointer;
-    color: #2dcacf;
+    color: rgb(165, 18, 18);
 }
 
 nav .row  .nav-link ul li a:hover::before{
@@ -76,10 +76,11 @@ nav .row  .nav-link ul li a:hover::before{
     bottom: 0;
     left: 10px;
     position: absolute;
-    background-color:#2dcacf ;
+    background-color:rgb(165, 18, 18); ;
 }
 nav .row  .nav-link ul  .btn1 {
-    border:1px solid white;
+    color:white;
+    /* border:1px solid white; */
     border-radius: 30px;
     padding: 10px ;
     cursor: pointer;
@@ -98,8 +99,8 @@ nav .row  .nav-link ul  .btn1:hover {
     cursor: pointer;
 } 
 nav .row  .nav-link ul  .btn2 {
-    border:1px solid #2dcacf;
-    background-color: #2dcacf;
+    border:1px solid rgb(165, 18, 18);
+    background-color: rgb(165, 18, 18);
     color:white;
     border-radius: 30px;
     padding: 10px 20px;
@@ -118,13 +119,13 @@ nav .row  .nav-link ul  .btn2:hover {
     cursor: pointer;
 } 
 nav .row  .nav-link ul  .active{
-    background-color: #2dcacf;
+    background-color: rgb(165, 18, 18);
     
 }
 /* =======================Section-1============================= */
 
 main #section1{
-    background-color: #def9fa;
+    background-color: #111;
 }
 main #section1 .container{
     width: 90%;
@@ -137,6 +138,7 @@ main #section1 .container .row{
 main #section1 .container .row .caption{
     width: 45%;
     margin-top: 10%;
+    color: white;
 }
 main #section1 .container .row .caption h2{
     font-size: 70px;
@@ -148,14 +150,14 @@ main #section1 .container .row .caption p{
     font-size: 30px;
 }
 main #section1 .container .row .caption .span{
-    color:#2dcacf;
+    color:rgb(165, 18, 18);;
 }
 main #section1 .container .row .caption .btn3{
     width:50%;
     padding:10px 25px;
-    background-color:#2dcacf;
+    background-color:rgb(165, 18, 18);;
     color:white;
-    border: 1px solid #2dcacf;
+    border: 1px solid rgb(165, 18, 18);;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -174,6 +176,12 @@ main #section1 .container .row .caption .btn3 i{
     color: white;
     margin-left: 15px;
 }
+/* main #section1 .container .row div .imgs{
+    background-image: url(../images/2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+} */
 main #section1 .container .row  .imgs{
     width:25%;
 }
@@ -182,20 +190,16 @@ main #section1 .container .row  .imgs img{
     margin-top: 25px;
     
 }
-/* =======================Icon============================= */
-
-
-
 main .icon{
     font-size: 25px;
-    color: black;
-    background-color: white;
+    color:rgb(165, 18, 18) ;
+    background-color: #080808;
     position: absolute;
     bottom: 0px;
     right: 0px;
     padding: 25px;
-    border: 1px solid  #2dcacf ;
-    box-shadow: 2px 2px 2px 2px  #2dcacf;
+    border: 1px solid  #080808 ;
+    box-shadow: 2px 2px 2px 2px  #090909;
     border-radius:50%;
     z-index: 10000;
     -webkit-border-radius: 304.031px;
